@@ -1,0 +1,31 @@
+// 共通
+@use "reset.scss";
+@use "common.scss";
+@use "mixin.scss" as *;
+
+//　各ページ
+@use "top.scss";
+
+/* 基本設定 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  // 確認用
+  //outline: 2px red solid;
+}
+
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  font-weight: Bold;
+  color: #ffffff;
+  background-color: #11131f;
+}
+
+.container {
+  width: 100vw;
+  margin: 0 auto;
+}

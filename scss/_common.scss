@@ -1,0 +1,31 @@
+@use "mixin.scss" as *;
+
+/* 共通パーツ */
+.btn-square {
+  background: url(../images/btn.png) center no-repeat;
+  padding: 16px 140px;
+  color: #ffffff;
+  margin-top: 64px;
+  font-size: 24px;
+
+  @include tb {
+    font-size: 16px;
+  }
+
+  @include sp {
+    font-size: 14px;
+    padding: 12px 97px;
+    background-size: auto;
+    background-size: 100%;
+  }
+}
+
+/* フレーバー部分の飾り */
+.kzr {
+  display: flex;
+  justify-content: center;
+  img {
+    width: 100vw;
+    height: auto;
+  }
+}
